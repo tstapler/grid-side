@@ -47,11 +47,13 @@
             {{ end }}
         {{ end }}
         <li class="blue-grey-text" style="border-top: 1px solid;"><!-- Separator --></li>
+        {{ if .RSSLink }}
         <li>
             <a href="{{ .RSSLink }}" type="application/rss+xml" target="_blank">
                 <i class="fa fa-rss fa-2x"></i>
             </a>
         </li>
+        {{ end }}
     </ul>
 </nav>
 
